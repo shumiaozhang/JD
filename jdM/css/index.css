@@ -167,6 +167,7 @@ jd_proBox .head.no_border{
     font-size:16px;
     position: relative;
     padding-left: 18px;
+    color: black;
 }
 .jd_proBox .head h3::before{
     content: '';
