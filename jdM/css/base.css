@@ -1,0 +1,60 @@
+/*重置样式*/
+*{
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after{
+    /*1 设置所有元素的宽度计算从边框开始*/
+    /*2 防止内容溢出，出现横向滚动条*/
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-size:14px;
+    color:#ccc;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    /*设置点击高亮颜色为完全透明 == 去除点击高亮效果*/
+    -wibkit-tap-highlight-color: transparent;
+}
+input, textarea{
+    border: none;
+    outline: none;
+    resize: none;
+    /*移动端的默认外观组件， 去除默认的外观*/
+    -webikt-appearance: none;
+}
+
+/*2 公共样式 */
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+}
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    height: 0;
+    display: block;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.mr10{
+    margin-left: 10px;
+}
+.mr10{
+    margin-right: 10px;
+}
+[class^="icon_"]{
+    background: url("../images/sprites.png") no-repeat 0 0 / 200px 200px;
+}
+
+
